@@ -1,0 +1,45 @@
+---
+import ContentSection from "./content-section.astro";
+---
+
+<ContentSection id="objetivos" title="Objetivos">
+    <div class="grid max-w-[80%] gap-12 text-lg">
+        <p>
+            <strong class="text-primary">Objetivo general:</strong>
+            <span
+                >Proporcionar landing pages de alta calidad y rápidas para
+                startups y pequeñas empresas, listas en 48 horas, optimizadas
+                para campañas de marketing digital.</span
+            >
+        </p>
+
+        <p class="grid max-w-[80%]">
+            <strong class="text-primary">Objetivos específicos:</strong>
+            <span
+                >1. Entregar landing pages personalizadas que reflejen la
+                identidad de marca del cliente.</span
+            >
+            <span
+                >2. Optimizar las páginas para SEO y velocidad de carga,
+                mejorando la visibilidad en buscadores.</span
+            ><span
+                >3. Integrar las páginas con herramientas de marketing como
+                Google Analytics y CRM.</span
+            >
+        </p>
+    </div>
+</ContentSection>
+<ContentSection id="metas" title="Meta">
+    <Fragment slot="lead"
+        >Lanzar todas las páginas solicitadas dentro del <span
+            class="text-secondary">plazo de 48 horas</span
+        >, garantizando una experiencia de usuario optimizada y <span
+            class="text-primary">resultados efectivos</span
+        > en campañas de marketing.</Fragment
+    >
+</ContentSection>
+<style is:global>
+    #metas p {
+        max-width: 80%;
+    }
+</style>
