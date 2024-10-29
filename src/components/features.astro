@@ -1,0 +1,65 @@
+---
+import { Icon } from "astro-icon/components";
+import ContentSection from "~/components/content-section.astro";
+import type { FeatureItem } from "~/types";
+
+const features: Array<FeatureItem> = [
+  {
+    title: "Rapidez de Entrega (48 horas)",
+    description:
+      "Desarrollo completo en menos de dos días para adaptarse a necesidades urgentes de marketing.",
+    icon: "mdi:handshake",
+  },
+  {
+    title: "100% Estáticas HTML, No JS",
+    description:
+      "Astro convierte toda tu página en HTML estático y elimina todo el JavaScript de la versión final de forma predeterminada.",
+    icon: "mdi:feather",
+  },
+  {
+    title: "Diseño Personalizado",
+    description:
+      "Diseño único alineado con la identidad de la marca y los objetivos específicos de cada cliente.",
+    icon: "mdi:directions-fork",
+  },
+  {
+    title: "Optimización SEO y Velocidad",
+    description:
+      "Asegura un rendimiento rápido y visibilidad en buscadores, ideal para campañas de publicidad.",
+    icon: "mdi:graph",
+  },
+  {
+    title: "Integración con Herramientas de Marketing",
+    description:
+      "Configuración para conectar con CRM, herramientas de email marketing, Google Analytics, y más.",
+    icon: "mdi:search-web",
+  },
+  {
+    title: "Soporte Posterior",
+    description:
+      "Asistencia técnica durante los primeros 7 días posteriores al lanzamiento para ajustes menores o consultas.",
+    icon: "mdi:account-group",
+  },
+];
+---
+
+<ContentSection title="Atributos" id="features">
+  <Fragment slot="lead">
+    Nuestros atributos <span class="text-primary"
+      >incluyen 100% de rapidez en todo</span
+    >
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      features.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+          <div class="size-16 rounded-full border-2 border-current p-3">
+            <Icon name={icon} class="size-full" />
+          </div>
+          <p class="text-center font-extrabold text-xl">{title}</p>
+          <p class="text-center text-offset text-sm">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>

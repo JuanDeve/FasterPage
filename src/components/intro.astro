@@ -1,0 +1,42 @@
+---
+import { Icon } from "astro-icon/components";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="FastPages" id="intro">
+  <Icon slot="eyebrow" name="logomark" class="size-32" />
+  <Fragment slot="lead">
+    Desarrollo de páginas de aterrizaje <span class="text-primary"
+      >(landing pages) de alta calidad</span
+    > en tiempos récord, <span class="text-primary"
+      >enfocado en startups y pequeñas empresas</span
+    > que buscan lanzar campañas de marketing rápidamente. <span
+      class="text-secondary"
+      >El servicio incluye diseño personalizado, optimización para SEO y
+      velocidad de carga, y configuración completa para publicidad digital.</span
+    > Las páginas están listas para su lanzamiento en un plazo de 48 horas, adaptadas
+    a los objetivos específicos de cada cliente.
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="https://docs.astro.build/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon name="mdi:telescope" class="size-8" />
+      <span>Documentación</span>
+    </a>
+    <a
+      href="https://wa.me/+573007648131"
+      target="_blank"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon name="mdi:rocket" class="size-8" />
+      <span>Contáctanos ahora!</span>
+    </a>
+  </div>
+</ContentSection>
+<style is:global>
+  #intro p {
+    min-width: 80%;
+  }
+</style>

@@ -1,0 +1,220 @@
+---
+import { Image } from "astro:assets";
+import ContentSection from "./content-section.astro";
+import imagenPrecio from "~/assets/precio.webp";
+const widths = [450, 800];
+const sizes = "(min-width: 640px) 42vw, 67vw";
+---
+
+<ContentSection id="las4p" title="Las p del mercado">
+    <Fragment slot="lead">
+        Las 4 “P” representan el producto, el precio, el punto de venta o plaza
+        y la promoción, los cuatro factores principales que los especialistas en
+        marketing deben tener en cuenta al diseñar su estrategia de campaña.
+        (Asana, 2024)
+    </Fragment>
+    <section class="grid w-[80%] gap-3">
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title font-medium text-primary text-2xl">
+                Precio
+            </div>
+            <div class="sombra-imagen collapse-content lg:flex">
+                <div
+                    class="background-image h-[270px] min-h-[270px] min-w-[270px] max-w-[270px]"
+                    style="--position:3;"
+                >
+                </div>
+                <div class="grid place-content-center gap-12">
+                    <p class="grid">
+                        <span
+                            ><strong class="text-primary"
+                                >Estrategia de Paquetes:</strong
+                            > Crear tres niveles de servicio (básico, avanzado y
+                            premium) con precios escalonados para adaptarse a diferentes
+                            presupuestos.</span
+                        >
+                        <span class="pl-12"
+                            ><strong class="text-primary">-Actividades:</strong>
+                            Ofrecer promociones especiales en el paquete premium
+                            y descuentos para clientes frecuentes.</span
+                        >
+                    </p>
+
+                    <p class="grid">
+                        <span
+                            ><strong class="text-primary"
+                                >Modelo de Cobro por Proyecto:</strong
+                            > Cobrar un monto fijo por proyecto para que el cliente
+                            sepa de antemano cuánto invertirá.</span
+                        >
+                        <span class="pl-12"
+                            ><strong class="text-primary">-Actividades:</strong>
+                            Publicar ejemplos de precios en la página web para transparencia
+                            y comodidad de los usuarios.</span
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-medium text-secondary text-2xl">
+                Producto
+            </div>
+            <div class="sombra-imagen collapse-content lg:flex">
+                <div
+                    class="background-image h-[270px] min-h-[270px] min-w-[270px] max-w-[270px]"
+                    style="--position:2;"
+                >
+                </div>
+                <div class="grid place-content-center gap-12">
+                    <p class="grid">
+                        <span
+                            ><strong class="text-secondary"
+                                >Estrategia de Personalización:
+                            </strong>Ofrecer un diseño totalmente adaptado a los
+                            objetivos y estética de la marca del cliente.</span
+                        >
+                        <span class="pl-12"
+                            ><strong class="text-secondary"
+                                >-Actividades:</strong
+                            >
+                            Generar casos de estudio y testimonios que demuestren
+                            la flexibilidad y personalización del servicio.</span
+                        >
+                    </p>
+
+                    <p class="grid">
+                        <span
+                            ><strong class="text-secondary"
+                                >Actualización y Mantenimiento Inicial:</strong
+                            > Incluir soporte técnico y ajustes en la primera semana
+                            posterior al lanzamiento.</span
+                        >
+                        <span class="pl-12"
+                            ><strong class="text-secondary"
+                                >-Actividades:</strong
+                            >
+                            Crear tutoriales y guías de uso para el cliente, y realizar
+                            seguimientos post-lanzamiento.</span
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-medium text-primary text-2xl">
+                Plaza
+            </div>
+            <div class="sombra-imagen collapse-content lg:flex">
+                <div
+                    class="background-image h-[270px] min-h-[270px] min-w-[270px] max-w-[270px]"
+                    style="--position:1;"
+                >
+                </div>
+                <div class="grid place-content-center gap-12">
+                    <p class="grid">
+                        <span
+                            ><strong class="text-primary"
+                                >Distribución a través de Marketplaces de
+                                Freelancers:</strong
+                            > Expandir el alcance a través de plataformas de freelance
+                            como Fiverr y Upwork.</span
+                        >
+                        <span class="pl-12"
+                            ><strong class="text-primary">-Actividades:</strong>
+                            Crear perfiles destacados en estas plataformas y ofrecer
+                            ejemplos de proyectos anteriores para atraer clientes.</span
+                        >
+                    </p>
+
+                    <p class="grid">
+                        <span
+                            ><strong class="text-primary"
+                                >Distribución Directa en Redes Sociales y Web:
+                            </strong> Promoción directa en la página web y redes
+                            sociales para atraer a clientes potenciales de forma
+                            directa.</span
+                        >
+                        <span class="pl-12"
+                            ><strong class="text-primary">-Actividades:</strong>
+                            Publicar contenido educativo en redes y hacer campañas
+                            de anuncios segmentados en LinkedIn y Facebook.</span
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-medium text-secondary text-2xl">
+                Promoción
+            </div>
+            <div class="sombra-imagen collapse-content lg:flex">
+                <div
+                    class="background-image h-[270px] min-h-[270px] min-w-[270px] max-w-[270px]"
+                    style="--position:0;"
+                >
+                </div>
+                <div class="grid place-content-center gap-12">
+                    <p class="grid">
+                        <span
+                            ><strong class="text-secondary"
+                                >Marketing de Contenidos:
+                            </strong>Publicación de artículos y guías sobre cómo
+                            crear una landing page efectiva y las mejores
+                            prácticas para optimizar conversiones.</span
+                        >
+                        <span class="pl-12"
+                            ><strong class="text-secondary"
+                                >-Actividades:</strong
+                            >
+                            Crear un blog en la web y colaboraciones con expertos
+                            en marketing para publicar guías prácticas.</span
+                        >
+                    </p>
+
+                    <p class="grid">
+                        <span
+                            ><strong class="text-secondary"
+                                >Publicidad en Redes Sociales:</strong
+                            > Campañas en redes sociales con enfoque en emprendedores
+                            y empresas emergentes que necesitan resultados rápidos.</span
+                        >
+                        <span class="pl-12"
+                            ><strong class="text-secondary"
+                                >-Actividades:</strong
+                            >
+                            Campañas de anuncios pagados en LinkedIn y Facebook mostrando
+                            ejemplos de landing pages y tiempos de entrega.</span
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</ContentSection>
+
+<style is:global>
+    #las4p p {
+        max-width: 80%;
+    }
+    .background-image {
+        background-image: url("../assets/iconos.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        /* Centra y ajusta cada imagen del carrusel */
+        background-position-y: calc(var(--position) * -270px);
+        filter: grayscale(1) invert(1) brightness(2);
+    }
+    .sombra-imagen {
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    }
+</style>
